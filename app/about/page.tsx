@@ -1,3 +1,7 @@
+export const metadata = {
+	title: "About me",
+};
+
 export default function Page() {
-    return <h2>About</h2>
+	return <h2>About hasn't been here</h2>;
 }
