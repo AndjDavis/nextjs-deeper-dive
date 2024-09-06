@@ -1,6 +1,7 @@
 import { Metadata } from "next";
-import Link from "next/link";
 
+import { LinkButton } from "@/app/_lib/buttons";
+import "./globals.css";
 
 export const metadata: Metadata = {
 	title: {
@@ -20,9 +21,9 @@ export default function RootLayout({
 		<html lang="en">
 			<body>
 				<header style={{ backgroundColor: "lightblue", padding: "1rem" }}>
-					<Link href="/">
+					<LinkButton>
 						<p>Header</p>
-					</Link>
+					</LinkButton>
 				</header>
 				{children}
 				<footer style={{ backgroundColor: "ghostwhite", padding: "1rem" }}>
