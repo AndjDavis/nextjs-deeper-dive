@@ -8,6 +8,7 @@ export default function Home() {
 				<LinkButton href="/login">Log In</LinkButton>
 				<LinkButton href="/blog">Blog</LinkButton>
 				<LinkButton href="/products">Products</LinkButton>
+				<LinkButton href="/order-product">Order Products</LinkButton>
 			</div>
 		</main>
 	);
