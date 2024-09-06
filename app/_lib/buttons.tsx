@@ -8,11 +8,8 @@ export function LinkButton({
 	href?: string;
 }) {
 	return (
-		<Link
-			href={href || "/"}
-			className="flex h-10 w-20 items-center justify-center rounded-lg bg-blue-500 px-4 text-sm font-medium text-white transition-colors hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 active:bg-blue-600 aria-disabled:cursor-not-allowed aria-disabled:opacity-50"
-		>
-			{children}
-		</Link>
+		<button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+			<Link href={href || "/"}>{children}</Link>
+		</button>
 	);
 }

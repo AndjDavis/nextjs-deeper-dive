@@ -22,7 +22,7 @@ export default function RootLayout({
 			<body>
 				<header style={{ backgroundColor: "lightblue", padding: "1rem" }}>
 					<LinkButton>
-						<p>Header</p>
+						<p>Home</p>
 					</LinkButton>
 				</header>
 				{children}
