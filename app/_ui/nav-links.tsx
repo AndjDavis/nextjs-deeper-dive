@@ -4,13 +4,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 
-const navLinks = [
-	{ name: "Register", href: "/register" },
-	{ name: "Login", href: "/login" },
-	{ name: "Forgot Password", href: "/forgot-password" },
-];
+import { INavLink } from "@/app/_lib/definitions";
 
-export default function NavLinks () {
+export default function NavLinks({ navLinks }: { navLinks: INavLink[] }) {
 	const pathname = usePathname();
 	return (
 		<div className="flex grow space-x-2">
