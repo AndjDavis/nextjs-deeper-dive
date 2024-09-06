@@ -1,4 +1,4 @@
-import { LinkButton } from "@/app/_lib/buttons";
+import { LinkButton } from "@/app/_ui/buttons";
 
 export default function Home() {
 	return (
@@ -9,6 +9,7 @@ export default function Home() {
 				<LinkButton href="/blog">Blog</LinkButton>
 				<LinkButton href="/products">Products</LinkButton>
 				<LinkButton href="/order-product">Order Products</LinkButton>
+				<LinkButton href="/cloaks">Cloaks</LinkButton>
 			</div>
 		</main>
 	);

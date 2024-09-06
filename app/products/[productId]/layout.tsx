@@ -1,4 +1,4 @@
-import { LinkButton } from "@/app/_lib/buttons";
+import { LinkButton } from "@/app/_ui/buttons";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
 	return (

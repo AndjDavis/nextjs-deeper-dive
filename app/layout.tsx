@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 
-import { LinkButton } from "@/app/_lib/buttons";
+import { LinkButton } from "@/app/_ui/buttons";
 import "./globals.css";
 
 export const metadata: Metadata = {

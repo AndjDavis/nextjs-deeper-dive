@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { LinkButton } from "@/app/_lib/buttons";
+import { LinkButton } from "@/app/_ui/buttons";
 
 export default function Page() {
 	const exampleProductId = 200;
