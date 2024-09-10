@@ -1,26 +1,33 @@
+import "@/app/complex-dashboard/styles.css";
+
 export default function DashboardLayout({
 	children,
-	users,
-	revenue,
+	login,
 	notifications,
+	revenue,
+	users,
 }: {
 	children: React.ReactNode;
-	users: React.ReactNode;
-	revenue: React.ReactNode;
+	login: React.ReactNode;
 	notifications: React.ReactNode;
+	revenue: React.ReactNode;
+	users: React.ReactNode;
 }) {
+	const isLoggedIn = false;
 	return (
-		<div className="h-screen">
-			<div>{children}</div>
-            <div className="flex">
-                <div className="flex flex-col">
-                    <div>{users}</div>
-                    <div>{revenue}</div>
-                </div>
-                <div className="flex grow">
-                    {notifications}
-                </div>
-            </div>
+		<div className="min-h-screen p-2">
+			<div className="my-5 p-2">{children}</div>
+			{isLoggedIn ? (
+				<div className="flex">
+					<div className="flex flex-col">
+						<div>{users}</div>
+						<div>{revenue}</div>
+					</div>
+					<div className="flex grow">{notifications}</div>
+				</div>
+			) : (
+				<div className="flex flex-col flex-grow">{login}</div>
+			)}
 		</div>
 	);
 }
